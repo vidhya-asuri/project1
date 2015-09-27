@@ -108,10 +108,12 @@
      border: 1px solid red;
      border-radius: 7pt;
      background: yellow;
-     -webkit-flex: 1 1 50%;
-             flex: 1 1 50%;
+     -webkit-flex: 1 1 30%;
+             flex: 1 1 30%;
      -webkit-order: 1;
              order: 1;
+      display: block;
+      max-width: 2em;
    }
 
    #side-nav2 {
@@ -120,14 +122,32 @@
      border: 1px solid red;
      border-radius: 7pt;
      background: pink;
-     -webkit-flex: 1 1 50%;
-             flex: 1 1 50%;
+     -webkit-flex: 1 1 30%;
+             flex: 1 1 30%;
      -webkit-order: 2;
              order: 2;
+      display: block;
+      max-width: 2em;
    }
 
+   #side-nav3 {
+     margin: 4px;
+     padding: 5px;
+     border: 1px solid red;
+     border-radius: 7pt;
+     background: yellow;
+     -webkit-flex: 1 1 30%;
+             flex: 1 1 30%;
+     -webkit-order: 2;
+             order: 2;
+      display: block;
+      max-width: 2em;
+   }
 
-
+   .side-nav1-img,.side-nav2-img,.side-nav3-img{
+     width: 100%;
+     height: 100%;
+   }
  
   header, footer {
    display: block;
