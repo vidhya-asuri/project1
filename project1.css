@@ -92,7 +92,10 @@
    -webkit-order: 2;
            order: 2;
    }
-
+   .udacity-logo{
+     width: 100%;
+     height: 100%;
+   }
  
   /* Too narrow to support three columns */
   @media all and (max-width: 400px) {
