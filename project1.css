@@ -58,9 +58,44 @@
    border-radius: 7pt;
    background: #ffeebb;
    }
+
+  #header-flex-box {
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-flow: row;
+           flex-flow: row;
+   }
+
+  #one {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid red;
+   border-radius: 7pt;
+   background: red; 
+   -webkit-flex: 1 1 50%;
+           flex: 1 1 50%;
+   -webkit-order: 1;
+           order: 1;
+   }
+
+
+  #two {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid blue;
+   border-radius: 7pt;
+   background: blue;
+   -webkit-flex: 1 1 50%;
+           flex: 1 1 50%;
+   -webkit-order: 2;
+           order: 2;
+   }
+
  
   /* Too narrow to support three columns */
-  @media all and (max-width: 640px) {
+  @media all and (max-width: 400px) {
   
    #main, #page {
     -webkit-flex-flow: column;
@@ -73,9 +108,21 @@
             order: 0;
    }
   
+   /*#main > nav, #main > aside, header, footer {*/
    #main > nav, #main > aside, header, footer {
     min-height: 50px;
     max-height: 50px;
    }
+
+   #header-flex-box{
+    -webkit-flex-flow: column;
+            flex-direction: column;
+   }
+
+   #one,#two{
+    -webkit-order: 0;
+            order: 0;
+   }
+ 
   }
 
