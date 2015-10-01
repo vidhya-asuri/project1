@@ -221,8 +221,16 @@
     -webkit-flex-flow: column;
             flex-direction: column;
    }
-
    #one,#two{
+    -webkit-order: 0;
+            order: 0;
+   }
+   #side-nav-container{
+    -webkit-flex-flow: row;
+            flex-direction: row;
+    justify-content: space-around;
+   }
+   #side-nav1,#side-nav2,#side-nav3{
     -webkit-order: 0;
             order: 0;
    }
